@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Easyfest</title>
+</head>
+
+
+<body>
+
+    @@include('./blocks/header.html')
+
+    <main>
+		<section class="slider">
+			<div class="container">
+				<div class="wrapper">
+					<div class="slider__container">
+						<div class="slider__photo-container">
+							<span class="slider__huinya">@@include('../svg/huinya.svg')</span>
+							<img class="slider__photo" src="./svg/sushi.svg" alt="">
+							<div class="slider__arrow-1">
+								<img class="slider__arrow" src="./svg/arrow.svg" alt="">
+							</div>
+							<div class="slider__arrow-2">
+								<img class="slider__arrow" src="./svg/arrow.svg" alt="">
+							</div>
+							<h2 class="slider__title">All You Need For</h2>
+							<h2 class="slider__title">Perfect Breakfast</h2>							
+							<span class="slider__rect">@@include('../svg/rect.svg')</span>
+							<div class="slider__text-container">
+								
+								<p class="slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+								<p class="slider__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+							</div>
+							<button class="slider__button slider__button-1">BUY NOW</button>
+							<button class="slider__button slider__button-2">SEE MORE</button>
+							<span class="slider__star">@@include('../svg/star.svg')</span>
+						</div>
+						<div class="ingredients__container">
+							<div class="ingredients__item-container">
+								<img class="ingredients__photo" src="./svg/fruits.svg" alt="fruits">
+								<p class="ingredients__title">Fruits</p>
+							</div>
+							<div class="ingredients__item-container">
+								<img class="ingredients__photo" src="./svg/vegetables.svg" alt="vegetables">
+								<p class="ingredients__title">Vegetables</p>
+							</div>
+							<div class="ingredients__item-container">
+								<img class="ingredients__photo" src="./svg/fish.svg" alt="fish">
+								<p class="ingredients__title">Semi-Finished</p>
+							</div>
+							<div class="ingredients__item-container">
+								<img class="ingredients__photo" src="./svg/bakery.svg" alt="bakery">
+								<p class="ingredients__title">Bakery</p>
+							</div>
+							<div class="ingredients__item-container">
+								<img class="ingredients__photo" src="./svg/meet.svg" alt="meat">
+								<p class="ingredients__title">Meat</p>
+							</div>
+							<div class="ingredients__item-container">
+								<img class="ingredients__photo" src="./svg/pasta.svg" alt="pasta">
+								<p class="ingredients__title">Pasta</p>
+							</div>
+							<div class="ingredients__item-container">
+								<img class="ingredients__photo" src="./svg/sweets.svg" alt="sweets">
+								<!-- <p class="ingredients__title">Sweets</p> -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="newproducts">
+			<div class="container">
+				<div class="wrapper newproducts__wrapper">
+					<div class="newproducts__title-container">
+						<hr>
+						<h2 class="newproducts__title">New Products</h2>
+						<hr>
+					</div>
+					
+					<div class="newproducts__arrows-container">
+						<div class="newproducts__arrow newproducts__arrow-1">
+							<img src="./svg/arrow.svg" alt="arrow">
+						</div>
+						<div class="newproducts__arrow newproducts__arrow-2">
+							<img src="./svg/arrow.svg" alt="arrow">
+						</div>
+					</div>
+
+					<div class="newproducts__container">
+						<div class="newproducts__item-container">
+							<img src="./img/img/banner_vegetables.png" alt="vegetables">
+							<h2 class="newproducts__cart-title">Fresh Vegetables</h2>
+							<button class="newproducts__cart-button">Order Now</button>
+						</div>
+
+						
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img src="./img/img/bread.jpg" alt="bread">
+							</div>
+							<!-- <div class="cart__hover">
+								<img class="cart__hover-plus" src="" alt="plus">
+								<img class="cart__hover-update" src="" alt="update">
+								<img class="cart__hover-like" src="" alt="like">
+								<img class="cart__hover-search" src="" alt="search">
+							</div> -->
+							<div class="cart__title">
+								<p>bakery bread viennoiserie...</p>
+							</div>
+							<div class="cart__price">
+								<p>$40.00 $30.00 (1kg)</p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+  
+    
+
+
+    @@include('./blocks/footer.html')
+
+
+    <script type="module" src="./js/index.bundle.js"></script>
+</body>
+
+
+</html>
