@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Easyfest</title>
+    <title>MOB</title>
 </head>
 
 
@@ -18,53 +18,121 @@
 				<div class="wrapper">
 					<div class="slider__container">
 						<div class="slider__photo-container">
-							<span class="slider__huinya">@@include('../svg/huinya.svg')</span>
-							<img class="slider__photo" src="./svg/sushi.svg" alt="">
+							<div class="slider__slide active">
+								
+								<span class="slider__huinya">@@include('../svg/huinya.svg')</span>
+								<img class="slider__photo" src="./svg/sushi.svg" alt="">
+								
+								<h2 class="slider__title slider__title_upper">All You Need For</h2>
+								<h2 class="slider__title slider__title_lower">Perfect Breakfast</h2>							
+								<span class="slider__rect">@@include('../svg/rect.svg')</span>
+								<div class="slider__text-container">
+									
+									<p class="slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+									<p class="slider__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+								</div>
+								<button class="slider__button slider__button-1">BUY NOW</button>
+								<button class="slider__button slider__button-2">SEE MORE</button>
+								<span class="slider__star">@@include('../svg/star.svg')</span>
+							</div>
+
+							<div class="slider__slide hide">
+								
+								<span class="slider__huinya">@@include('../svg/huinya.svg')</span>
+								<img width="800" class="slider__photo slider__photo-beef" src="./img/img/beef-2-main.jpg" alt="photo salad">
+								
+								<h2 class="slider__title">2nd</h2>
+								<h2 class="slider__title">Perfect Breakfast</h2>							
+								<span class="slider__rect">@@include('../svg/rect.svg')</span>
+								<div class="slider__text-container">
+									
+									<p class="slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+									<p class="slider__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+								</div>
+								<button class="slider__button slider__button-1">BUY NOW</button>
+								<button class="slider__button slider__button-2">SEE MORE</button>
+								<span class="slider__star">@@include('../svg/star.svg')</span>
+							</div>
+
+							<div class="slider__slide hide">
+								
+								<span class="slider__huinya">@@include('../svg/huinya.svg')</span>
+								<img class="slider__photo slider__photo-beef-cells" src="./img/img/beef-main.jpg" alt="photo beef">
+								
+								<h2 class="slider__title">3st</h2>
+								<h2 class="slider__title">Perfect Breakfast</h2>							
+								<span class="slider__rect">@@include('../svg/rect.svg')</span>
+								<div class="slider__text-container">
+									
+									<p class="slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+									<p class="slider__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+								</div>
+								<button class="slider__button slider__button-1">BUY NOW</button>
+								<button class="slider__button slider__button-2">SEE MORE</button>
+								<span class="slider__star">@@include('../svg/star.svg')</span>
+							</div>
+
+
 							<div class="slider__arrow-1">
-								<img class="slider__arrow" src="./svg/arrow.svg" alt="">
+								<button id="prevBtn">
+									<img class="slider__arrow slider__arrow-left" src="./svg/white-arrow.svg" alt="">
+								</button>
 							</div>
 							<div class="slider__arrow-2">
-								<img class="slider__arrow" src="./svg/arrow.svg" alt="">
+								<button id="nextBtn">
+									<img class="slider__arrow" src="./svg/arrow.svg" alt="">
+								</button>
 							</div>
-							<h2 class="slider__title">All You Need For</h2>
-							<h2 class="slider__title">Perfect Breakfast</h2>							
-							<span class="slider__rect">@@include('../svg/rect.svg')</span>
-							<div class="slider__text-container">
-								
-								<p class="slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-								<p class="slider__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
-							</div>
-							<button class="slider__button slider__button-1">BUY NOW</button>
-							<button class="slider__button slider__button-2">SEE MORE</button>
-							<span class="slider__star">@@include('../svg/star.svg')</span>
+
+							
 						</div>
 						<div class="ingredients__container">
 							<div class="ingredients__item-container">
-								<img class="ingredients__photo" src="./svg/fruits.svg" alt="fruits">
-								<p class="ingredients__title">Fruits</p>
+								<a href="#">
+
+									<img class="ingredients__photo" src="./svg/fruits.svg" alt="fruits">
+									<p class="ingredients__title">Fruits</p>
+								</a>
 							</div>
 							<div class="ingredients__item-container">
-								<img class="ingredients__photo" src="./svg/vegetables.svg" alt="vegetables">
-								<p class="ingredients__title">Vegetables</p>
+								<a href="#">
+
+									<img class="ingredients__photo" src="./svg/vegetables.svg" alt="vegetables">
+									<p class="ingredients__title">Vegetables</p>
+								</a>
 							</div>
 							<div class="ingredients__item-container">
-								<img class="ingredients__photo" src="./svg/fish.svg" alt="fish">
-								<p class="ingredients__title">Semi-Finished</p>
+								<a href="#">
+
+									<img class="ingredients__photo ingredients__photo-fish" src="./svg/fish.svg" alt="fish">
+									<p class="ingredients__title">Semi-Finished</p>
+								</a>
 							</div>
 							<div class="ingredients__item-container">
-								<img class="ingredients__photo" src="./svg/bakery.svg" alt="bakery">
-								<p class="ingredients__title">Bakery</p>
+								<a href="#">
+
+									<img class="ingredients__photo ingredients__photo-bakery" src="./svg/bakery.svg" alt="bakery">
+									<p class="ingredients__title">Bakery</p>
+								</a>
 							</div>
 							<div class="ingredients__item-container">
-								<img class="ingredients__photo" src="./svg/meet.svg" alt="meat">
-								<p class="ingredients__title">Meat</p>
+								<a href="#">
+
+									<img class="ingredients__photo " src="./svg/meet.svg" alt="meat">
+									<p class="ingredients__title ingredients__photo-meat">Meat</p>
+								</a>
 							</div>
 							<div class="ingredients__item-container">
-								<img class="ingredients__photo" src="./svg/pasta.svg" alt="pasta">
-								<p class="ingredients__title">Pasta</p>
+								<a href="#">
+
+									<img class="ingredients__photo ingr-pasta" src="./svg/pasta.svg" alt="pasta">
+									<p class="ingredients__title">Pasta</p>
+								</a>
 							</div>
 							<div class="ingredients__item-container">
-								<img class="ingredients__photo" src="./svg/sweets.svg" alt="sweets">
+								<a href="#">
+									<img class="ingredients__photo" src="./svg/sweets.svg" alt="sweets">
+								</a>
 								<!-- <p class="ingredients__title">Sweets</p> -->
 							</div>
 						</div>
@@ -79,51 +147,848 @@
 			<div class="container">
 				<div class="wrapper newproducts__wrapper">
 					<div class="newproducts__title-container">
-						<hr>
+						<img class="newprod__line" src="./svg/line-title.svg" alt="">
 						<h2 class="newproducts__title">New Products</h2>
-						<hr>
+						<img class="newprod__line" src="./svg/line-title.svg" alt="">
 					</div>
 					
 					<div class="newproducts__arrows-container">
 						<div class="newproducts__arrow newproducts__arrow-1">
-							<img src="./svg/arrow.svg" alt="arrow">
+							<button id="prevBtn-np">
+								<img class="newprod__arrow" src="./svg/white-arrow.svg" alt="arrow">
+							</button>
 						</div>
 						<div class="newproducts__arrow newproducts__arrow-2">
-							<img src="./svg/arrow.svg" alt="arrow">
+							<button id="nextBtn-np">
+								<img class="newprod__arrow newprod__arrow-red" src="./svg/arrow.svg" alt="arrow">
+							</button>
 						</div>
 					</div>
 
 					<div class="newproducts__container">
 						<div class="newproducts__item-container">
-							<img src="./img/img/banner_vegetables.png" alt="vegetables">
+							<img class="newprod__img-main" src="./img/img/banner_vegetables.png" alt="vegetables">
 							<h2 class="newproducts__cart-title">Fresh Vegetables</h2>
 							<button class="newproducts__cart-button">Order Now</button>
 						</div>
 
+						<div class="newproducts__carts-slider">
+							
+							<div class="newproducts__cart-container">
+								<div class="cart__image">
+									<img class="cart__img" src="./svg/bread-img.svg" alt="bread image">
+								</div>
+								<div class="cart__hover cart__hover--active">
+									<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+									
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+								</div>
+								<div class="cart__title">
+									<p>bakery bread viennoiserie...</p>
+								</div>
+								<div class="cart__price">
+									<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+								</div>
+
+							</div>
+
+
+							<div class="newproducts__cart-container">
+								<div class="cart__image">
+									<img class="cart__img" src="./img/img/NP-1.png" alt="bread image">
+								</div>
+								<div class="cart__hover cart__hover--active">
+									<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+									
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+								</div>
+								<div class="cart__title">
+									<p>bakery bread viennoiserie...</p>
+								</div>
+								<div class="cart__price">
+									<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+								</div>
+
+							</div>
+
+
+
+							<div class="newproducts__cart-container">
+								<div class="cart__image">
+									<img class="cart__img" src="./img/img/NP-2.png" alt="bread image">
+								</div>
+								<div class="cart__hover cart__hover--active">
+									<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+									
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+								</div>
+								<div class="cart__title">
+									<p>bakery bread viennoiserie...</p>
+								</div>
+								<div class="cart__price">
+									<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+								</div>
+
+							</div>
+						</div>
+
+
+						<div class="newproducts__carts-slider hide">
+							
+							<div class="newproducts__cart-container">
+								<div class="cart__image">
+									<img class="cart__img" src="./svg/bread-img.svg" alt="bread image">
+								</div>
+								<div class="cart__hover cart__hover--active">
+									<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+									
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+								</div>
+								<div class="cart__title">
+									<p>2nd slide</p>
+								</div>
+								<div class="cart__price">
+									<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+								</div>
+
+							</div>
+
+
+							<div class="newproducts__cart-container">
+								<div class="cart__image">
+									<img class="cart__img" src="./img/img/NP-1.png" alt="bread image">
+								</div>
+								<div class="cart__hover cart__hover--active">
+									<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+									
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+								</div>
+								<div class="cart__title">
+									<p>2nd slide</p>
+								</div>
+								<div class="cart__price">
+									<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+								</div>
+
+							</div>
+
+
+
+							<div class="newproducts__cart-container">
+								<div class="cart__image">
+									<img class="cart__img" src="./img/img/NP-2.png" alt="bread image">
+								</div>
+								<div class="cart__hover cart__hover--active">
+									<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+									
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+									<img class="cart__hover-line" src="./svg/line.svg" alt="">
+									<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+								</div>
+								<div class="cart__title">
+									<p>bakery bread viennoiserie...</p>
+								</div>
+								<div class="cart__price">
+									<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+								</div>
+
+							</div>
+						</div>
 						
+
+						
+						
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="beef">
+			<div class="container beef__container">
+				<div class="wrapper beef__wrapper">
+					<div class="beef__img-container">
+						<img class="beef__image" src="./svg/cells-beef.svg" alt="cells-beef-image">
+					</div>	
+					<div class="beef__content-container">
+
+						<div class="beef__title-container">
+							<p class="beef__title beef__title-upper">Our Special Service</p>
+							<p class="beef__title">Fresh Beef</p>
+							<img class="beef__rect" src="./svg/rect-beef.svg" alt="rect-beef">
+						</div>
+						<div class="beef__price-container">
+							<div class="beef__price-wrapper">
+								<p class="beef__price"><span class="beef__price-old">$20.00</span> $18.00</p>
+							</div>
+						</div>
+						<div class="beef__button-container">
+							<button class="beef__button slider__button">SHOP NOW</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="bestsell">
+			<div class="container">
+				<div class="bestsell__wrapper wrapper">
+					<div class="bestsell__title-container">
+						<img class="bestsell__line" src="./svg/line-title.svg" alt="line-title">
+						<p class="newproducts__title">Best Selling Product</p>
+						<img class="bestsell__line" src="./svg/line-title.svg" alt="line-title">
+					</div>
+					<div class="bestsell__menu-container">
+						<ul class="bestsell__list">
+							<li class="bestsell__item bestsell__item--active"><a href="">Fruits</a></li>
+							<li class="bestsell__item"><a href="">Drinks</a></li>
+							<li class="bestsell__item"><a href="">Vegetable</a></li>
+							<li class="bestsell__item"><a href="">Meal</a></li>
+							<li class="bestsell__item"><a href="">Milk</a></li>
+							<li class="bestsell__item"><a href="">Vakes</a></li>
+						</ul>
+					</div>
+
+					<div class="bestsell__carts-container">
+
 						<div class="newproducts__cart-container">
 							<div class="cart__image">
-								<img src="./img/img/bread.jpg" alt="bread">
+								<img class="cart__img" src="./svg/bread-img.svg" alt="bread image">
 							</div>
-							<!-- <div class="cart__hover">
-								<img class="cart__hover-plus" src="" alt="plus">
-								<img class="cart__hover-update" src="" alt="update">
-								<img class="cart__hover-like" src="" alt="like">
-								<img class="cart__hover-search" src="" alt="search">
-							</div> -->
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
 							<div class="cart__title">
 								<p>bakery bread viennoiserie...</p>
 							</div>
 							<div class="cart__price">
-								<p>$40.00 $30.00 (1kg)</p>
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
 							</div>
 
+						</div>
+
+
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img class="cart__img" src="./img/img/NP-3.png" alt="bread image">
+							</div>
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
+							<div class="cart__title">
+								<p>bakery bread viennoiserie...</p>
+							</div>
+							<div class="cart__price">
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+							</div>
+
+						</div>
+
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img class="cart__img" src="./img/img/NP-1.png" alt="bread image">
+							</div>
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
+							<div class="cart__title">
+								<p>bakery bread viennoiserie...</p>
+							</div>
+							<div class="cart__price">
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+							</div>
+
+						</div>
+
+
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img class="cart__img" src="./img/img/NP-2.png" alt="bread image">
+							</div>
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
+							<div class="cart__title">
+								<p>bakery bread viennoiserie...</p>
+							</div>
+							<div class="cart__price">
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+							</div>
+
+						</div>
+
+						
+					</div>
+
+
+					<div class="bestsell__carts-container">
+
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img class="cart__img" src="./svg/bread-img.svg" alt="bread image">
+							</div>
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
+							<div class="cart__title">
+								<p>2nd group</p>
+							</div>
+							<div class="cart__price">
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+							</div>
+
+						</div>
+
+
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img class="cart__img" src="./img/img/NP-3.png" alt="bread image">
+							</div>
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
+							<div class="cart__title">
+								<p>bakery bread viennoiserie...</p>
+							</div>
+							<div class="cart__price">
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+							</div>
+
+						</div>
+
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img class="cart__img" src="./img/img/NP-1.png" alt="bread image">
+							</div>
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
+							<div class="cart__title">
+								<p>bakery bread viennoiserie...</p>
+							</div>
+							<div class="cart__price">
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+							</div>
+
+						</div>
+
+
+						<div class="newproducts__cart-container">
+							<div class="cart__image">
+								<img class="cart__img" src="./img/img/NP-2.png" alt="bread image">
+							</div>
+							<div class="cart__hover cart__hover--active">
+								<a href="#"><img class="cart__hover-plus" src="./svg/plus.svg" alt="plus"></a>
+								
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href><img class="cart__hover-update" src="./svg/update-icon.svg" alt="update"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-like" src="./svg/like-icon.svg" alt="like"></a>
+								<img class="cart__hover-line" src="./svg/line.svg" alt="">
+								<a href="#"><img class="cart__hover-search" src="./svg/search-icon.svg" alt="search"></a>
+							</div>
+							<div class="cart__title">
+								<p>bakery bread viennoiserie...</p>
+							</div>
+							<div class="cart__price">
+								<p><span class="cart__price-old">$40.00</span> $30.00 <span class="cart__price-weight">(1kg)</span></p>
+							</div>
+
+						</div>
+
+						
+					</div>
+
+
+					<div class="bestsell__arrows-container">
+						<div class="newproducts__arrow newproducts__arrow-1">
+							<button id="prevBtn-bs">
+
+								<img class="bestsell__arrow" src="./svg/white_strela.svg" alt="arrow">
+							</button>
+						</div>
+						<div class="newproducts__arrow newproducts__arrow-2">
+							<button id="nextBtn-bs">
+
+								<img class="bestsell__arrow-red" src="./svg/red_strela.svg" alt="arrow">
+							</button>
 						</div>
 					</div>
 
 				</div>
 			</div>
 		</section>
+
+
+		@@include('./blocks/delivery.html')
+
+
+		<section class="list">
+			<div class="container">
+				<div class="list__wrapper wrapper">
+					<div class="list__cart-main">
+						<img class="list__cart-img-main" src="./img/img/cup.png" alt="cup of tea">
+						<div class="list__cart-img">
+							<img class="list__cart-images" src="./img/img/3day.png" alt="">
+							<img class="list__cart-images" src="./img/img/16hour.png" alt="">
+							<img class="list__cart-images" src="./img/img/25min.png" alt="">
+							<img class="list__cart-images" src="./img/img/10sce.png" alt="">
+						</div>
+						<div class="list__cart-title-container">
+							<p class="list__cart-title">Fresh Black Coffee</p>
+						</div>
+						<div class="list__cart-desc-container">
+							<p class="list__cart-desc">There are many variations of a </p>
+							<p class="list__cart-desc">passages of Lorem Ipsum</p>
+							<p class="list__cart-desc">available</p>
+						</div>
+						<div class="list__cart-price-container">
+							<p class="list__cart-price"><span class="list__cart-price-old">$ 25.00</span> $20.00</p>
+						</div>
+						<div class="list__cart-button-container">
+							<button class="list__cart-button">
+								<img class="list__cart-btn-icon" src="./svg/bag.svg" alt="bag">
+								Add to bag
+							</button>
+							
+
+							<img class="list__cart-button-img" src="./img/img/plus.png" alt="plus">
+							
+						</div>
+		
+					</div>
+					<div class="list__cart-content">
+						<div class="list__content-title-container">
+							<img class="list__content-line" src="./svg/bs-line-title.svg" alt="">
+							<p class="list__content-title newproducts__title">Best Selling</p>
+							<img class="list__content-line" src="./svg/bs-line-title.svg" alt="">
+						</div>
+						<ul class="list__content-list bestsell__list">
+							<li class="bestsell__item bestsell__item--active"><a href="">Fruits</a></li>
+							<li class="bestsell__item"><a href="">Drinks</a></li>
+							<li class="bestsell__item"><a href="">Vegetable</a></li>
+							<li class="bestsell__item"><a href="">Meal</a></li>
+							<li class="bestsell__item"><a href="">Milk</a></li>
+							<li class="bestsell__item"><a href="">Vakes</a></li>
+						</ul>
+						<div class="list__cells-container">
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/honey.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs-1.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs-2.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs3.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs4.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs5.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs6.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs7.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs8.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+							</div>
+
+							<div class="list__cell-container">
+								<div class="list__cell-img">
+									<img class="list__cell-image" src="./img/img/bs10.png" alt="">
+								</div>
+								<div class="list__cell-content">
+									<div class="list__cell-title-container">
+										<p class="list__cell-title list__cart-title">Low Fat Peanut Oil</p>
+									</div>
+									<div class="list__cell-price-container">
+										<p class="list__cell-price list__cart-price"><span class="list__cell-price-old list__cart-price-old">$ 25.00</span> $20.00</p>
+									</div>
+									<div class="list__cell-button-container">
+										<button class="list__cell-button beef__button slider__button">
+											Buy Now
+										</button>
+									</div>
+									<div class="list__cell-rating-container">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star-fill.svg" alt="">
+										<img class="list__cell-star" src="./svg/star.svg" alt="">
+										<span class="list__cell-count-reviews">(05)</span>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="down">
+			<div class="container">
+				<div class="down__wrapper wrapper">
+					<div class="down__content-container">
+						<div class="down__title-container">
+							<p class="down__title newproducts__title">Make your online shop sob</p>
+							<p class="down__title newproducts__title">ready with our mobile all</p>
+
+						</div>
+
+						<div class="down__desc-container">
+							<p class="down__desc newproducts__desc">There are many variations of passages of Lorem Ipsum available, but the</p>
+							<p class="down__desc newproducts__desc"> majority have suffered alteration in some form, by injected humour</p>
+						</div>
+
+						<div class="down__button-container">
+							<a href=""><img class="down__btn-icon" src="./svg/google.svg" alt="google"></a>
+							<a href=""><img class="down__btn-icon" src="./svg/google.svg" alt="appstore"></a>
+						</div>
+					</div>
+
+					<div class="down__img-container">
+						<img class="down__img" src="./img/img/phones.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+
 	</main>
   
     

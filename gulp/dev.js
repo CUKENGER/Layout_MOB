@@ -130,13 +130,13 @@ gulp.task('clean:dev', function(done) {
 
 // слежение за изменениями
 gulp.task('watch:dev', function() {
-    gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'));
-    gulp.watch('./src/**/*.html', gulp.parallel('includeFiles:dev'));
-    gulp.watch('./src/img/**/*', gulp.parallel('copyImages:dev'));
-    gulp.watch('./src/svg/**/*', gulp.parallel('copySvg:dev'));
-    gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev'));
-    gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
-    gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
+    gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'),{usePolling: true});
+    gulp.watch('./src/**/*.html', gulp.parallel('includeFiles:dev'),{usePolling: true});
+    gulp.watch('./src/img/**/*', gulp.parallel('copyImages:dev'),{usePolling: true});
+    gulp.watch('./src/svg/**/*', gulp.parallel('copySvg:dev'),{usePolling: true});
+    gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev'),{usePolling: true});
+    gulp.watch('./src/files/**/*', gulp.parallel('files:dev'),{usePolling: true});
+    gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'),{usePolling: true});
 })
 
 // Компиляция js

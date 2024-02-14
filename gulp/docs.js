@@ -70,8 +70,8 @@ gulp.task('sass:docs', function() {
         .pipe(sourceMaps.init())
         .pipe(autoprefixer())
         .pipe(sassGlob())
-        .pipe(webpCSS())
-        .pipe(groupMedia())
+        // .pipe(webpCSS())
+        // .pipe(groupMedia())
         .pipe(sass())
         .pipe(csso())
         .pipe(sourceMaps.write())
@@ -88,6 +88,13 @@ gulp.task('copyImages:docs', function() {
         // .pipe(changed('./docs/img/'))
         // .pipe(imagemin({verbose: true}))
         // .pipe(gulp.dest('./docs/img/'))
+})
+
+// Компиляция svg
+gulp.task('copySvg:docs', function() {
+    return gulp.src('./src/svg/**/*.svg')
+        .pipe(changed('./docs/svg/'))
+        .pipe(gulp.dest('./docs/svg/'))
 })
 
 // Компиляция Шрифтов

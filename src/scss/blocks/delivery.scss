@@ -1,0 +1,95 @@
+@import '../_global.scss';
+@font-face {
+    font-family: 'SofiaProSemiBold';
+    src: url('../../fonts/SofiaProSemiBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'SofiaProRegular';
+    src: url('../../fonts/SofiaProRegular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'SofiaProMedium';
+    src: url('../../fonts/SofiaProMedium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'SofiaProBold';
+    src: url('../../fonts/SofiaProBold.woff2') format('woff2');
+}
+
+.delivery{
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.delivery__wrapper{
+    @include flex-ALL;
+    column-gap: 4rem;
+}
+
+.delivery__button{
+    border: 0.2rem #E21A43 solid ;
+    color: #E21A43;
+    font-size: 1.6rem;
+    text-wrap: nowrap;
+    padding: 1.1rem 2.2rem 1.6rem 2.2rem;
+    background-color: #ffffff;
+    font-family: "SofiaProSemiBold";
+}
+
+.delivery__title{
+    font-family: 'SofiaProSemiBold';
+    font-size: 5.4rem;
+    color:#333333;
+}
+
+.delivery__desc,
+.delivery__icons-text{
+    font-family: 'SofiaProRegular';
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+.delivery__title-container{
+    position: relative;
+}
+
+.delivery__rect{
+    position: absolute;
+    bottom: -2rem;
+    right: 33.3rem;
+    width: 23.1rem;
+    height: auto;
+}
+
+.delivery__content-container{
+    @include flex-ALL-column;
+    align-items: flex-start;
+    row-gap: 2.8rem;
+}
+
+.delivery__icons-wrapper{
+    display: flex;
+    column-gap: 1.5rem;
+
+    img{
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-top: 0.3rem;
+    }
+}
+
+.delivery__icons-container{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.delivery__img{
+    width: 57rem;
+    height: auto;
+}
+
+.deloivery__icon{
+    width: 1.7rem;
+    height: 2.1rem;
+}
+

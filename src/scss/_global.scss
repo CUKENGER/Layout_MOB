@@ -5,7 +5,8 @@
 html{
     scroll-behavior: smooth;
     font-size: calc(100vw / 1920 * 10);
-    // @media (max-width: 1024px) {
+    
+    /*// @media (max-width: 1024px) {
     //     font-size: calc(100vw / 1024 * 10)
     // }
     // @media (max-width: 767px) {
@@ -13,16 +14,16 @@ html{
     // }
     // @media (max-width: 500px) {
     //     font-size: calc(100vw / 500 * 10)
-    // }
+    // }*/
 }
 
 body {
-    // display: flex;
-    // flex-direction: column;
+    /*// display: flex;
+    // flex-direction: column;*/
     min-height: 100vh;
 }
 
-// div {
+/*// div {
 //     width: 100%;
 //     text-align: center;
 // }
@@ -30,7 +31,7 @@ body {
 // div>img{
 //     width: 100%;
 //     height: auto;
-// }
+// }*/
 
 h1 {
     font-family: 'Roboto-Bold';
@@ -75,3 +76,34 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+button{
+    border:none;
+    background-color: transparent;
+}
+
+@mixin flex-ALL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-ALL-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@mixin flex-hor{
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-ver{
+    display: flex;
+    align-items: center;
+}
+
+
+

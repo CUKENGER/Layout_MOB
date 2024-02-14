@@ -21,6 +21,20 @@
     height: 10rem;
 }
 
+.header_logo{
+    width: 17rem;
+    height: auto;
+}
+
+
+.header__search,
+.header__profile,
+.header__cart{
+    width: 5rem;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
 
 .header_search_bar,
 .header_nav__auth{
@@ -35,15 +49,42 @@
 }
 
 .header_input{
-    height: 100%;
+    height: 5rem;
     border-style: none;
     background-color: rgba(226, 26, 67, 0.1); /* Цвет с прозрачностью */
+    width: 23rem;
 }
 
 .search_container{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    input{
+        padding: 1rem 1.7rem 1rem 1.7rem;
+        line-height: 2;
+        color: #333333;
+        font-family: 'SofiaProRegular';
+    }
+
+    input:active,
+    input:focus{
+        border-color: #E21A43;
+        box-shadow: 0 0 0.5rem #E21A43;
+        transition: border-color 1s, box-shadow 1s;
+        outline: none;
+        color: #333333;
+        font-family: 'SofiaProRegular';
+        
+        .header_search{
+            opacity: 0;
+        }
+    }
+
+    input::placeholder{
+        font-size: 1.6rem;
+    }
 }
 
 .header_nav_list{
@@ -67,4 +108,16 @@
 
 ul{
     list-style: none;
+}
+
+.header_search{
+    position: absolute;
+    left: 8.5rem;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.header_input:focus + .header_search,
+.header_input:not(:placeholder-shown) + .header_search {
+    opacity: 0;
 }

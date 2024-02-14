@@ -1,20 +1,27 @@
 @import "./blocks/*.scss";
 @import './_global.scss';
 @font-face {
-    font-family: 'SofiaPro-SemiBold';
-    src: url('../fonts/SofiaPro-SemiBold.woff2') format('woff2');
+    font-family: 'SofiaProSemiBold';
+    src: url('../fonts/SofiaProSemiBold.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'SofiaPro-Regular';
-    src: url('../fonts/SofiaPro-Regular.woff2') format('woff2');
+    font-family: 'SofiaProRegular';
+    src: url('../fonts/SofiaProRegular.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'SofiaPro-Medium';
-    src: url('../fonts/SofiaPro-Medium.woff2') format('woff2');
+    font-family: 'SofiaProMedium';
+    src: url('../fonts/SofiaProMedium.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'SofiaPro-Bold';
-    src: url('../fonts/SofiaPro-Bold.woff2') format('woff2');
+    font-family: 'SofiaProBold';
+    src: url('../fonts/SofiaProBold.woff2') format('woff2');
+}
+
+
+a:hover{
+    transform: scale(1.2);
+    transition: transform 1s, color 1s;
+    color: #E21A43;
 }
 
 .slider{
@@ -28,13 +35,14 @@
 }
 
 .slider__title{
-    font-family: 'SofiaPro-SemiBold';
+    font-family: 'SofiaProSemiBold';
     font-size: 6.4rem;
     color: #333333;
+    
 }
 
 .slider__text{
-    font-family: 'SofiaPro-Regular';
+    font-family: 'SofiaProRegular';
     font-size: 1.6rem;
     color: #666666;
 }
@@ -43,12 +51,65 @@
     position: absolute;
     left: 47rem;
     top: 0;
+    width: 72.1rem;
+    height: auto;
 }
+// сщву
+.slider__photo-container {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider__slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slider__photo-beef{
+    width: 53.2rem;
+    left: 55.5rem;
+}
+
+.slider__photo-beef-cells{
+    width: 57rem;
+    left: 56rem;
+}
+
+.hide{
+    display: none;
+}
+
+.newproducts__carts-slider{
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+
+
+// сщву
+
+.slider__huinya{
+    width: 2.9rem;
+    height: auto;
+}
+
+.slider__arrow{
+    width: 5rem;
+    height: auto;
+}
+
+
 
 .slider__arrow-2{
     position: absolute;
     left: 114rem;
     top: 24rem;
+}
+
+.slider__star{
+    width: 3.8rem;
+    height: auto;
 }
 
 .slider__arrow-1{
@@ -58,10 +119,30 @@
     transform: rotateY(180deg);
 }
 
+.slider__arrow-left{
+    transform: rotate(180deg);
+}
+
 .slider__rect{
     position: absolute;
-    top: 14.2rem;
-    left: 20rem;
+    top: 18.2rem;
+    left: 23rem;
+    width: 28rem;
+    height: auto;
+
+    svg {
+        width: 28.5rem;
+        height: auto;
+    }
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
 }
 
 .slider__text-container{
@@ -70,14 +151,15 @@
 
 .slider__text{
     margin-bottom: 1.2rem;
+    width: 51rem;
 }
 
 .slider__button{
     border: #E21A43 solid 0.15rem;
-    width: 13rem;
-    height: 5rem;
-    font-family: 'SofiaPro-SemiBold';
-    font-weight: 600;
+    white-space: nowrap;
+    font-family: 'SofiaProSemiBold';
+    padding: 1.4rem 2.9rem 1.4rem 2.9rem;
+    font-size: 1.6rem;
 }
 
 .slider__button-1{
@@ -88,6 +170,7 @@
 
 .slider__button-2{
     color: #E21A43;
+    background-color: #ffffff;
 }
 
 .slider__star{
@@ -101,13 +184,34 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .ingredients__title{
     font-size: 1.7rem;
-    font-weight: 525;
-    font-family: "SofiaPro-Medium";
+    font-family: "SofiaProMedium";
     color: #666666;
+}
+
+.ingredients__photo{
+    width: 5.3rem;
+    height: auto;
+}
+
+.ingredients__item-container{
+    @include flex-ALL-column;
+}
+
+.ingredients__photo-fish{
+    margin-bottom: 1rem;
+}
+
+.ingredients__photo-meat{
+    margin-bottom: -2.2rem;
+}
+
+.ingr-pasta{
+    margin-bottom: 1.3rem;
 }
 
 
@@ -116,12 +220,51 @@
 
 
 .newproducts{
-    padding-top: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem ;
     background-color: #F7F7F7;
+}
+
+.newprod__line{
+    width: 3rem;
+    height: auto;
+}
+
+.newprod__arrow{
+    width: 5.8rem;
+    height: auto;
+}
+
+.newprod__img-main{
+    width: 29.1rem;
+    height: auto;
+}
+
+.cart__img{
+    width: 22.2rem;
+    height: auto;
+}
+
+.cart__hover-plus{
+    width: 1.6rem;
+    height: auto;
+}
+
+.cart__hover-line{
+    height: 1.5rem;
+    pointer-events: none;
+}
+
+.cart__hover-update,
+.cart__hover-like,
+.cart__hover-search{
+    width: 2rem;
+    height: auto;
 }
 
 .newproducts__wrapper{
     flex-direction: column;
+    position: relative;
 }
 
 .newproducts__container{
@@ -130,13 +273,32 @@
     align-items: flex-end;
 }
 
+.newproducts__title-container{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center; 
+    position: absolute; 
+    top: 0;
+    right: 42rem;
+}
+
 .newproducts__title{
-    font-family: 'SofiaPro-SemiBold';
+    font-family: 'SofiaProSemiBold';
     font-size: 2.4rem;
+    color: #333333;
+}
+
+.newproducts__arrows-container{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    position: absolute;
+    top: 5rem;
+    right: 14.3rem;
 }
 
 .newproducts__cart-title{
-    font-family: 'SofiaPro-Bold';
+    font-family: 'SofiaProBold';
     font-size: 3.2rem;
     color: #333333;
 }
@@ -147,6 +309,7 @@
     align-items: center;
     row-gap: 1rem;
     background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.6rem rgb(146, 146, 146);
 }
 
 .newproducts__cart-button{
@@ -154,9 +317,8 @@
     border: none;
     color: #E21A43;
     padding: 1.2rem 2.5rem;
-    font-family: 'SofiaPro-SemiBold';
+    font-family: 'SofiaProSemiBold';
     font-size: 1.6rem;
-    font-weight: 600;
 }
 
 .newproducts__cart-container{
@@ -166,15 +328,473 @@
     justify-content: center;
     background-color: #ffffff;
     height: 40rem;
+    row-gap: 1.5rem;
+    position: relative;
+    box-shadow: 0.2rem 0.2rem 0.6rem rgb(146, 146, 146);
+}
+
+
+.newprod__arrow-red{
+    width: 5.14rem;
+    height: auto;
 }
 
 .cart__image img{
-    width:24.6rem;
-    height: 26.8rem;
+    width: 24.55rem;
+    height: 26.75rem;
+    padding: 0 1.2rem;
 }
 
 .cart__title{
-    font-family: "SofiaPro-Regular";
-    font-size: 1.8rem;
+    p{
+        font-family: "SofiaProRegular";
+        font-size: 1.8rem;
+        color: #333333;
+        text-align: start;
+    }
+}
+
+.cart__price{
+    p {
+        font-family: 'SofiaProBold';
+        color: #333333;
+        margin-right: 8.4rem;
+    }
+
+    .cart__price-old{
+        text-decoration: line-through;
+        font-family: 'SofiaProRegular';
+    }
+
+    .cart__price-weight{
+        font-size: 1.6rem;
+        font-family: 'SofiaProMedium';
+    }
+}
+
+.cart__hover{
+    position: absolute;
+    bottom: 10rem;
+    height: 4rem;
+    background-color: #ffffff;
+    left: 5.2rem;
+    right: 5.2rem;
+    padding: 1rem 1.6rem;
+    display: flex;
+    column-gap: 0.5rem;
+
+    .cart__hover-plus{
+        position: relative;
+        left: 0rem;
+        bottom: 0.1rem;
+    }
+}
+
+
+
+
+
+
+// section beef
+
+
+
+
+
+.beef{
+    padding-top: 6rem;
+    background-image: url('../svg/lines-bg.svg');
+    height: 59rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+
+    p {
+        font-family: 'SofiaProSemiBold';
+    }
+}
+
+.beef__image{
+    width: 57rem;
+    height: auto;
+}
+
+.beef__wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;    
+}
+
+.beef__title{
+    font-size: 6rem;
+    color: #666666;
+}
+
+.beef__price-wrapper{
+
+
+    p{
+        
+        font-size: 3.2rem;
+    }
+
+    .beef__price-old{
+        text-decoration: line-through;
+        color: #888888;
+        margin-right: 1rem;
+    }
+}
+
+
+.beef__button{
+    width: 13rem;
+    height: 5rem;
+    color: #E21A43;
+    font-size: 1.6rem;
+    text-wrap: nowrap;
+    padding: 1.1rem 2.2rem  1.9rem 2.2rem;
+    background-color: #ffffff;
+
+    button {
+        border: 3rem solid #E21A43;
+        cursor: pointer;
+    }
+}
+
+.beef__content-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.3rem;
+    position: relative;
+}
+
+.beef__rect{
+    position: absolute;
+    top: 14rem;
+    right: 24.5rem;
+    width: 13.6rem;
+    height: auto;
+}
+
+.beef__title-upper{
+    margin-bottom: 1rem;
+}
+
+
+
+
+// section bestsell
+
+
+
+
+.bestsell{
+    padding-top: 5rem;
+    background-color: #F7F7F7;
+}
+
+.bestsell__title-container{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bestsell__wrapper{
+    @include flex-ALL-column;
+    position: relative;
+}
+
+.bestsell__carts-container{
+    @include flex-ALL;
+    column-gap: 1.5rem;
+}
+
+.bestsell__list{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    @include flex-ALL;
+    column-gap: 3rem;
+
+    li{
+        font-family: 'SofiaProMedium';
+        font-size: 1.6rem;
+    }
+
+    .bestsell__item--active{
+        font-family: 'SofiaProSemiBold';
+        color: #E21A43;
+        text-decoration: underline #E21A43;
+    }
+}
+
+.bestsell__line{
+    width: 3rem;
+    height: auto;   
+}
+
+.bestsell__arrows-container{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    column-gap: 1.5rem;
+}
+
+.bestsell__arrow{
+    width: 5.14rem;
+    height: auto;
+}
+
+.bestsell__arrow-red{
+    width: 5.14rem;
+    height: auto;
+}
+
+
+
+
+// section list
+
+
+
+
+.list{
+    margin-top: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #F7F7F7;
+}
+
+.list__wrapper{
+    display: flex;
+    column-gap: 4rem;
+    align-items: flex-start;
+}
+
+.list__cart-main{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    @include flex-ALL-column;
+    align-items: flex-start;
+    row-gap: 2rem;
+
+    .list__cart-img{
+        display: flex;
+        column-gap: 1.34rem;
+    }
+}
+
+.list__cart-title{
+    font-family: 'SofiaProSemiBold';
+    font-size: 2.4rem;
     color: #333333;
 }
+
+.list__cart-desc{
+    font-family: 'SofiaProRegular';
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+.list__cart-price-old{
+    text-decoration: line-through;
+    font-family: 'SofiaProRegular';
+    color: #666666;   
+    font-size: 1.7rem;
+}
+
+.list__cart-price{
+    font-family: 'SofiaProSemiBold';
+    color: #E21A43;
+}
+
+.list__cart-button{
+    padding: 1rem 4rem 1.23rem 4rem;
+    border: none;
+    background-color: #E21A43;
+    color: #ffffff;
+    font-family: 'SofiaProMedium';
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.7rem;
+
+    button{
+        text-align: center;
+    }
+}
+
+.list__cart-button-container{
+    display: flex;
+    column-gap: 1.7rem;
+}
+
+.list__content-title{
+    position: static;
+    display: flex;
+}
+
+.list__cell-title{
+    font-size: 1.4rem;
+}
+
+.list__cell-price{
+    font-size: 1.6rem;
+}
+
+
+.list__cell-price-old{
+    font-size: 1.4rem;
+}
+
+.list__cells-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+
+.list__cell-container{
+    @include flex-ALL;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    column-gap: 1.5rem;
+    background-color: #ffffff;
+}
+
+
+.list__cell-content{
+    @include flex-ALL-column;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.list__cell-button{
+    padding: 1.3rem 2rem 1.2rem 2rem;
+}
+
+.list__cell-count-reviews{
+    font-family: 'SofiaProMedium';
+    font-size: 1.2rem;
+    color: #E21A43;
+}
+
+.list__content-title-container{
+    @include flex-ALL;
+    flex-direction: row;
+}
+
+.list__cart-img-main{
+    width: 24rem;
+    height: auto;
+}
+
+.list__cart-image,
+.list__cart-button-img{
+    width: 5rem;
+    height: auto;
+}
+
+.list__cart-button-img{
+    cursor: pointer;
+}
+
+.list__cart-btn-icon{
+    width: 1.4rem;
+    height: auto;
+}
+
+.list__content-line{
+    width: 3rem;
+    height: auto;
+}
+
+.list__cell-image{
+    width: 11.1rem;
+    height: auto;
+}
+
+.list__cell-star{
+    width: 1.2rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.list__cart-images{
+    width: 5rem;
+    height: auto;
+}
+
+.list__cell-rating-container{
+    @include flex-ALL;
+    column-gap: 0.2rem;
+}
+
+
+
+
+// section  down
+
+
+
+
+.down{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.down__title{
+    font-size: 4.8rem;
+    color: #333333;
+}
+
+.down__desc{
+    font-family: 'SofiaProRegular';
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+.down__content-container{
+    @include flex-ALL-column;
+    align-items: flex-start;
+    row-gap: 3rem;   
+}
+
+.down__button-container{
+    display: flex;
+    column-gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.down__btn-icon{
+    width: 18rem;
+    height: auto;
+}
+
+.down__img{
+    width: 63.3rem;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .search__container{
+        input::placeholder{
+            text-align: center;
+            line-height: 5rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
